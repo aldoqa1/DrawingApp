@@ -1,0 +1,48 @@
+#canvas {
+  border: 1px solid #1369b4;
+  background-color: white;
+  overflow: hidden;
+  margin: 0rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+.container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.tool {
+  margin: 0rem;
+  display: flex;
+  width: 60rem;
+  height: 8rem;
+  background-color: rgb(112, 180, 240);
+  border: 1px solid #1369b4;
+}
+
+.tool > * {
+  transition: all 1s ease;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.tool > *:hover {
+  transform: scale(110%);
+}
+
+.tool > *:last-child {
+  margin-left: auto;
+}
